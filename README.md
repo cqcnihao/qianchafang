@@ -7,3 +7,8 @@
 `admin`,`api`分别是对后台和对接口的工程，他们都依赖`componet`；  
 
 
+### 实体基类设计  
+实体的四个基本字段:id,data,status,create_time  
+
+设计基类之前，考虑到数据库以后是否分表分库，要使用集群的话，考虑用zookeeper进行管理  
+
