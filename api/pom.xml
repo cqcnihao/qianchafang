@@ -7,13 +7,10 @@
         <relativePath>../component/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>admin</artifactId>
-    <packaging>pom</packaging>
-    <name>admin Maven Webapp</name>
+    <artifactId>api</artifactId>
+    <packaging>war</packaging>
+    <name>api Maven Webapp</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>../api</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -23,6 +20,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>admin</finalName>
+        <finalName>api</finalName>
     </build>
 </project>
