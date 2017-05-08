@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 /**
  * Created by Poan on 2017/5/8.
  */
-public abstract class AbstractLazyZkNode<T> extends AbstractZkNode {
+public abstract class AbstractLazyZkNode<T> extends AbstractZkNode<T> {
 
     protected final String monitorPath;
 
