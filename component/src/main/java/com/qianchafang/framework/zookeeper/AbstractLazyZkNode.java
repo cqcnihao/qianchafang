@@ -27,8 +27,8 @@ public abstract class AbstractLazyZkNode<T> extends AbstractZkNode<T> {
         this.clientFactory = clientFactory;
     }
 
-    public AbstractLazyZkNode(String monitorPath, CuratorFramework client) {
-        this(monitorPath, client, null);
+    public AbstractLazyZkNode(String monitorPath, Supplier<CuratorFramework> clientFactory) {
+        this(monitorPath, null, clientFactory);
     }
 
 

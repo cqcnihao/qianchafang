@@ -14,6 +14,7 @@ import java.sql.SQLFeatureNotSupportedException;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 /**
@@ -30,8 +31,8 @@ public class ZkBasedDataSource extends AbstractLazyZkNode<BasicDataSource> imple
         }
     }
 
-    public ZkBasedDataSource(String monitorPath, CuratorFramework client) {
-        super(monitorPath, client);
+    public ZkBasedDataSource(String monitorPath, Supplier<CuratorFramework> clientFactory) {
+        super(monitorPath, clientFactory);
     }
 
     @Override
