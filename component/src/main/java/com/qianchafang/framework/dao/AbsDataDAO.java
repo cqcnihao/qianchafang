@@ -149,10 +149,6 @@ public abstract class AbsDataDAO<K extends Number, V extends HasId<K> & HasCreat
                         V model = rowMapper.mapRow(rs, 0);
                         if (model != null) {
                             result.put(model.getId(), model);
-                        } else {
-                            if (tableName != "chat_msg") {//chatmsg中有一个类型（互相点赞成好友）没有model与之对应，另外ChatMsgDAO中自带了一个log
-                                logger.warn("mapping empty model for {}", tableName);
-                            }
                         }
                     });
         }
