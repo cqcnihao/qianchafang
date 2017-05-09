@@ -13,4 +13,6 @@ public class User implements HasData, HasId<Long>, HasCreateTime, HasStatus {
     public Long getId() {
         return null;
     }
+
+
 }
