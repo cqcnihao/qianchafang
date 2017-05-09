@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class EntityStatus {
 
-    enum EStatus {
+    public enum EStatus {
         // value值与数据库中字段对应；暂时想到这几个值，后续再补充
         normal(1),
         hide(2),
