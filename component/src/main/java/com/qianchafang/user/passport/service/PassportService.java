@@ -14,9 +14,6 @@ public interface PassportService {
      */
     int createAccount(String wxName);
 
-    /**
-     * 根据用户密码，为其算出一个票据，并存储到db；
-     */
     String createTicket(int userId);
 
     /**

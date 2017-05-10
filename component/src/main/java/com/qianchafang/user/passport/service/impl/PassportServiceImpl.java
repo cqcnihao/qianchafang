@@ -20,6 +20,7 @@ public class PassportServiceImpl implements PassportService {
 
     @Override
     public String createTicket(int userId) {
+        // todo：票的生成待参考其他应用，，，
         return null;
     }
 
